@@ -64,8 +64,9 @@ void		exception_test()
 	std::cout << "\t-------- Bad constructor ------- " << std::endl;
 	try
 	{
-		std::cout << "bad = Span(-42)"<< std::endl;
+		std::cout << "bad = Span(-42) ... ";
 		Span	bad = Span(-42);
+		std::cout << C_RED << " KO, this line must not be here !" << C_RESET << std::endl;
 	}
 	catch (std::exception &e)
 	{
